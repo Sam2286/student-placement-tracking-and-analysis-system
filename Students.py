@@ -38,4 +38,7 @@ class Students:
             self.__cgpa = None  # Keep as None if invalid
 
     def set_placementStatus(self, status):
-        self.__placementStatus = status
+        if status=="yes" or status=="no":
+            self.__placementStatus = status
+        else:
+            print("invalid input")
